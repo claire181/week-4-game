@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charse="UTF-8">
+    <title>Crystals Collector</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body>
+    <div class="jumbotron">
+        <div class="container">
+            <h1>Crystal Collector Game</h1>
+        </div>
+    </div>
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title">HOW TO PLAY:</h3>
+        </div>
+        <div class="panel-body">
+            <ul>
+                <li>A random number will be generated at the start of the game.
+                </li>
+                <li>You will use the four crystals below (amethyst, diamond, ruby, and topaz) to increase your number and hopefully match the value of the generated number.</li>
+                <li>Each crystal will have a value between 1-12 but you won't know it until you click it, so choose wisely.</li>
+                <li>You will win once your value equals the generated number.</li>
+                <li>You will lose if your value exceeds the generated number.</li>
+                <li>Tip: The quicker you can figure out the value differential of the gems, the easier it will be to match your score to the generated number.</li>
+            </ul>
+        </div>
+    </div>
+    <!--Number to Get: Display Box-->
+    <div class="container">
+        <div class="row list generatedNumber">
+            <h1>Generated Number: <span id="randomNumber"></span></h1>
+        </div>
+        <!--User Sum: Display Box-->
+        <div class="row list">
+            <div class="col-xs-6 col-md-3 userSum">
+                <h2>Your total score is: <span id="finalTotal"></span></h2>
+            </div>
+            <!--Wins and Losses: Display Box-->
+            <div class=" row list">
+            <div col-xs-6 col-md-3 winsLosses">
+                <h2>Wins: <span id="numberWins"></span></h2>
+                <br>
+                <h2>Losses: <span id="numberLosses"></span></h2>
+            </div>
+            </div>
+        </div>
+        <!--Gem: Display Box-->
+        <div class="row list gemsAll">
+            <div class="col-xs-6 col-md-3">
+                <img src="assets/images/amethyst.png" class="gemImg" id="amethyst" alt="cartoon amethyst">
+            </div>
+            <div class="col-xs-6 col-md-3">
+                <img src="assets/images/diamond.png" class="gemImg" id="diamond" alt="cartoon green diamond">
+            </div>
+            <div class="col-xs-6 col-md-3">
+                <img src="assets/images/ruby.png" class="gemImg" id="ruby" alt="cartoon heart ruby">
+            </div>
+            <div class="col-xs-6 col-md-3">
+                <img src="assets/images/topaz.png" class="gemImg" id="topaz" alt="cartoon topaz">
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+    <script type="text/javascript " src="assets/javascript/game.js"></script>
+</body>
+
+</html>
