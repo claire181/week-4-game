@@ -1,5 +1,6 @@
 $(document).ready(function(){
 
+// *** GLOBAL VARIABLES *** //
 // Create a number between 19 and 120 to be displayed at the start of the game.
 var random = Math.floor(Math.random()*101+19)
 // Append var random to the randomNumber id in index.html.
@@ -38,7 +39,6 @@ function reset(){
 function winner(){
 	alert("Congratulations, you win!");
 		wins++;
-		console.log(alert);
 		$('#numberWins').text(wins);
 		reset();
 }
@@ -47,7 +47,6 @@ function winner(){
 function loser(){
 	alert("You lost! Try again!!");
 		losses++;
-		console.log(alert);
 		$('#numberLosses').text(losses);
 		reset();
 }
